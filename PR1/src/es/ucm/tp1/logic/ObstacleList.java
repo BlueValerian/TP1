@@ -10,7 +10,9 @@ public class ObstacleList {
     private Game game;
     private Level level;
 
-    public ObstacleList(Random rand) {
+    public ObstacleList(Random rand, Game game, Level level) {
+        this.game = game;
+        this.level = level;
         obstacles = new Obstacle[game.getRoadLenght()];
         nObstacles = 0;
 

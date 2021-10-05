@@ -11,15 +11,16 @@ public class Game {
 	private long seed;
 	private Coin coin;
 	private Obstacle obstacle;
-	// private ObstacleList obstacles;
+	private ObstacleList obstacles;
 	private Random rand;
 
 	public Game(long seed, Level level) {
 		player = new Player(0, 1, this);
-		obstacle = new Obstacle(1, 2);
-		coin = new Coin(2, 2);
+		// obstacle = new Obstacle(1, 2);
+		// coin = new Coin(2, 2);
 		this.level = level;
 		this.seed = seed;
+		obstacles = new ObstacleList(rand, this, level);
 		setMeta();
 	}
 
