@@ -1,10 +1,10 @@
 package es.ucm.tp1.logic;
 
-public class Obstacle {
+public class Coin {
     private int x;
     private int y;
 
-    public Obstacle(int x, int y) {
+    public Coin(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -22,6 +22,6 @@ public class Obstacle {
     }
 
     public String toString() {
-        return "░";
+        return "¢";
     }
 }

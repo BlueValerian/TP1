@@ -38,7 +38,7 @@ public class ObstacleList {
     public int search(int x, int y) {
         boolean found = false;
         for (int i = 0; i < nObstacles && !found; i++) {
-            if (obstacles[i].x == x && obstacles[i].y == y) {
+            if (obstacles[i].getX() == x && obstacles[i].getY() == y) {
                 return i;
             }
         }

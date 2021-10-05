@@ -9,6 +9,7 @@ public class Game {
 	private int meta;
 	private Level level;
 	private long seed;
+	private Coin coin;
 	private Obstacle obstacle;
 	// private ObstacleList obstacles;
 	private Random rand;
@@ -16,6 +17,7 @@ public class Game {
 	public Game(long seed, Level level) {
 		player = new Player(0, 1, this);
 		obstacle = new Obstacle(1, 2);
+		coin = new Coin(2, 2);
 		this.level = level;
 		this.seed = seed;
 		setMeta();
@@ -60,6 +62,8 @@ public class Game {
 			return player.toString();
 		else if (obstacle.isInPosition(relativeX, y))
 			return obstacle.toString();
+		else if (coin.isInPosition(relativeX, y))
+			return coin.toString();
 		else if (relativeX == level.getRoadLenght() - 1)
 			return metaToString();
 
