@@ -9,6 +9,7 @@ public class ObstacleList {
     private int nObstacles;
     private Game game;
     private Level level;
+    private Random rand;
 
     public ObstacleList(Random rand, Game game, Level level) {
         this.game = game;
@@ -17,11 +18,6 @@ public class ObstacleList {
         nObstacles = 0;
 
         // TODO, poner en otro lado
-        for (int i = 0; i < obstacles.length; i++) {
-            if (rand.nextFloat() > level.getObstacleFrequency()) {
-                addObstacle(new Obstacle(rand.nextInt(game.getRoadWidth()), i));
-            }
-        }
     }
 
     public int getSize() {
@@ -37,6 +33,7 @@ public class ObstacleList {
         nObstacles++;
     }
 
+    // TODO cambiar por otra cosa, o el getObstacleInPosition vale tambien
     public int search(int x, int y) {
         boolean found = false;
         for (int i = 0; i < nObstacles && !found; i++) {
@@ -47,8 +44,17 @@ public class ObstacleList {
         return -1;
     }
 
-    public Boolean hasCrashed() {
-        return false;
+    public Obstacle getObstacleInPosition(int x, int y) {
+        for (int i = 0; i < nObstacles; i++) {
+            if (obstacles[i].isInPosition(x, y)) {
+                return obstacles[i];
+            }
+        }
+        return null;
+    }
+
+    public boolean isInPosition(int x, int y) {
+        return this.getObstacleInPosition(x, y) != null;
     }
 
     public String toString(int i) {
