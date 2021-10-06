@@ -18,43 +18,41 @@ public class Game {
 	private int meta;
 	private Level level;
 	private long seed;
-	private Coin coin;
+	// private Coin coin;
+	private CoinList coins;
 	// private Obstacle obstacle;
 	private ObstacleList obstacles;
 	private Random rand;
 
 	public Game(long seed, Level level) {
 		player = new Player(2, 2, this);
-		coin = new Coin(3, 2);
+		// coin = new Coin(3, 2);
 		this.level = level;
 		this.seed = seed;
 		rand = new Random(seed);
 		obstacles = new ObstacleList(rand, this, level);
-		crearObstaculos();
+		coins = new CoinList(rand, this, level);
+		createObjects();
 		setMeta();
 	}
 
-	public void crearObstaculos() {
-		for (int i = level.getVisibility() / 2; i < level.getRoadLenght(); i++) {
-
+	public void createObjects() {
+		for (int i = getVisibility() / 2; i < getRoadLenght(); i++) {
+			tryToAddObstacle(new Obstacle(i, getRandomLane()), level.getObstacleFrequency());
+			tryToAddCoin(new Coin(i, getRandomLane()), level.getObstacleFrequency());
 		}
 	}
 
-	public void tryToAddObstacle(Obstacle obstacle, int row, ,double obstacleFrequency) {
+	public void tryToAddObstacle(Obstacle obstacle, double obstacleFrequency) {
 		if (rand.nextFloat() > level.getObstacleFrequency()) {
-			Obstacle aux;
-			aux = new Obstacle(row, rand.nextInt(getRandomLane()));
-			obstacles.addObstacle(aux);
+			obstacles.addObstacle(obstacle);
 		}
 	}
 
-	public void tryToAddCoin(Coin coin, int row, double coinFrequency) {
+	public void tryToAddCoin(Coin coin, double coinFrequency) {
 		if (rand.nextFloat() > level.getCoinFrequency()) {
-			Coin aux;
-			aux = new Coin(row, rand.nextInt(getRandomLane()));
-			// coins.addCoin(coin);
+			coins.addCoin(coin);
 		}
-
 	}
 
 	public int getRandomLane() {
@@ -96,12 +94,13 @@ public class Game {
 
 	public String positionToString(int x, int y) {
 		int relativeX = player.getX() + x;
+
 		if (player.isInPosition(relativeX, y))
 			return player.toString();
 		else if (obstacles.isInPosition(relativeX, y))
 			return obstacles.getObstacleInPosition(relativeX, y).toString();
-		else if (coin.isInPosition(relativeX, y))
-			return coin.toString();
+		else if (coins.isInPosition(relativeX, y))
+			return coins.getCoinInPosition(relativeX, y).toString();
 		else if (relativeX == level.getRoadLenght() - 1)
 			return metaToString();
 

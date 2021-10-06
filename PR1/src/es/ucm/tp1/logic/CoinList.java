@@ -2,8 +2,6 @@ package es.ucm.tp1.logic;
 
 import java.util.Random;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 import es.ucm.tp1.control.Level;
 
 public class CoinList {
