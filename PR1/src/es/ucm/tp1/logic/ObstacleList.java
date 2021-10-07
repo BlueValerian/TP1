@@ -20,9 +20,9 @@ public class ObstacleList {
         // TODO, poner en otro lado
     }
 
-    public int getSize() {
-        return obstacles.length;
-    }
+    // public int getSize() {
+    // return obstacles.length;
+    // }
 
     public int getCounter() {
         return nObstacles;

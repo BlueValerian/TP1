@@ -33,7 +33,7 @@ public class Game {
 		obstacles = new ObstacleList(rand, this, level);
 		coins = new CoinList(rand, this, level);
 		createObjects();
-		setMeta();
+		// setMeta();
 	}
 
 	public void createObjects() {
@@ -44,13 +44,13 @@ public class Game {
 	}
 
 	public void tryToAddObstacle(Obstacle obstacle, double obstacleFrequency) {
-		if (rand.nextFloat() > level.getObstacleFrequency()) {
+		if (rand.nextDouble() < level.getObstacleFrequency()) {
 			obstacles.addObstacle(obstacle);
 		}
 	}
 
 	public void tryToAddCoin(Coin coin, double coinFrequency) {
-		if (rand.nextFloat() > level.getCoinFrequency()) {
+		if (rand.nextDouble() < level.getCoinFrequency()) {
 			coins.addCoin(coin);
 		}
 	}
