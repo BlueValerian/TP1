@@ -6,7 +6,7 @@ public class Player {
 	private Game game;
 	private int hp;
 
-	public Player(int x, int y, Game game) {
+	public Player(Game game, int x, int y) {
 		this.x = x;
 		this.y = y;
 		hp = 1;
@@ -54,16 +54,16 @@ public class Player {
 			y++;
 	}
 
-	public boolean hasArrived() {
-		return (game.getRoadLenght() - getX()) == 0;
-	}
-
 	public boolean hasCrashed() {
 		if (game.isObstacleInPosition(x, y)) {
 			hp--;
 			return true;
 		}
 		return false;
+	}
+
+	public boolean hasArrived() {
+		return (game.getRoadLenght() - getX() == 0);
 	}
 
 }

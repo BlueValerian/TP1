@@ -1,5 +1,6 @@
 package es.ucm.tp1.view;
 
+import es.ucm.tp1.control.Level;
 import es.ucm.tp1.logic.Game;
 import es.ucm.tp1.utils.*;
 
@@ -55,9 +56,18 @@ public class GamePrinter {
 	}
 
 	private String getInfo() {
+		/* @formatter:off */
+		return  
+		// "Level: " + game.levelName() + "\n" + 
+		// 		"Random generator initialized with seed: " + game.getSeed() + "\n" +
+				"Distance: " + (game.getActualDistanceToGoal() - 1) + "\n" +
+				"Coins: " + game.getCoinsCounter() + "\n" +
+				"Cycle: " + game.getNumberCycles() + "\n" +
+				"Total obstacles: " + game.getTotalObstacles() + "\n" +
+				"Total coins: " + game.getTotalCoins() + "\n" +
+				"Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
+		/* @formatter:on */
 
-		// TODO add yout code
-		return "";
 	}
 
 	@Override
@@ -92,8 +102,13 @@ public class GamePrinter {
 
 		String s = GAME_OVER_MSG;
 
-		// TODO your code here
-
+		if (game.playerHasCrashed()) {
+			s += CRASH_MSG;
+		} else if (game.playerHasArrived()) {
+			s += WIN_MSG;
+		} else {
+			s += DO_EXIT_MSG;
+		}
 		return s;
 	}
 }

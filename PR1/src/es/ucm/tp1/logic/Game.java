@@ -4,63 +4,48 @@ import java.util.Random;
 
 import es.ucm.tp1.control.Level;
 
-//	(x, y)
-// 	width : 3
-//	lenght : 10, 30, 100
-// +----------------------------+
-// | (0,0) (1,0) (2,0) (3,0) ...|
-// | (0,1) (1,1) (2,1) (3,1) ...|
-// | (0,2) (1,2) (2,2) (3,2) ...|
-// +----------------------------+
-
 public class Game {
 	private Player player;
-	private int meta;
+	private Obstacle obstacle;
 	private Level level;
-	private long seed;
-	// private Coin coin;
-	private CoinList coins;
-	// private Obstacle obstacle;
 	private ObstacleList obstacles;
+	private CoinList coins;
 	private Random rand;
+	private int nCycles;
+	// Timer
+	private double startTime;
+	private double elapsedTime;
+	private double elapsedSeconds;
+	private double secondsDisplay;
 
 	public Game(long seed, Level level) {
-		player = new Player(2, 2, this);
-		// coin = new Coin(3, 2);
+		startTimer();
+		this.rand = new Random(seed);
 		this.level = level;
-		this.seed = seed;
-		rand = new Random(seed);
-		obstacles = new ObstacleList(rand, this, level);
-		coins = new CoinList(rand, this, level);
-		createObjects();
-		// setMeta();
+		nCycles = 0;
+		player = new Player(this, getRoadWidth() / 2, 1);
+		obstacles = new ObstacleList(this);
+		coins = new CoinList(this);
+		tryToGenerate();
+
 	}
 
-	public void createObjects() {
-		for (int i = getVisibility() / 2; i < getRoadLenght(); i++) {
-			tryToAddObstacle(new Obstacle(i, getRandomLane()), level.getObstacleFrequency());
-			tryToAddCoin(new Coin(i, getRandomLane()), level.getObstacleFrequency());
-		}
+	// TODO hacer que sea en primera ejecucion 0,00 segundos y no 0,02 segundos
+	// PREGUNTAR AL PROFESOR
+	public void startTimer() {
+		startTime = System.currentTimeMillis();
 	}
 
-	public void tryToAddObstacle(Obstacle obstacle, double obstacleFrequency) {
-		if (rand.nextDouble() < level.getObstacleFrequency()) {
-			obstacles.addObstacle(obstacle);
-		}
-	}
-
-	public void tryToAddCoin(Coin coin, double coinFrequency) {
-		if (rand.nextDouble() < level.getCoinFrequency()) {
-			coins.addCoin(coin);
-		}
-	}
-
-	public int getRandomLane() {
-		return rand.nextInt(level.getRoadWidth());
+	public double showTimeSeconds() {
+		elapsedTime = System.currentTimeMillis() - startTime;
+		elapsedSeconds = elapsedTime / 1000;
+		secondsDisplay = elapsedSeconds % 60;
+		return secondsDisplay;
 	}
 
 	public void toggleTest() {
-		// TODO
+		// TODO PREGUNTAR AL PROFESOR
+		// Que va aqui?
 	}
 
 	public int getVisibility() {
@@ -68,47 +53,38 @@ public class Game {
 	}
 
 	public int getRoadWidth() {
-		return level.getRoadWidth();
+		return level.getWidth();
 	}
 
 	public int getRoadLenght() {
-		return level.getRoadLenght();
+		return level.getLength();
 	}
 
+	public double getObstacleFrequency() {
+		return level.getObstacleFrequency();
+	}
+
+	public double getCoinFrequency() {
+		return level.getCoinFrequency();
+	}
+
+	// TODO PREGUNTAR AL PROFESOR
+	// Que va aqui?
 	public String getGameStatus() {
 		return "";
 	}
 
-	// Meta
-	public void setMeta() {
-		meta = level.getRoadLenght();
-	}
-
-	public int getMeta() {
-		return meta;
-	}
-
-	public String metaToString() {
-		return "¦";
-	}
-
 	public String positionToString(int x, int y) {
 		int relativeX = player.getX() + x;
-
-		if (player.isInPosition(relativeX, y))
+		if (player.isInPosition(relativeX, y)) {
 			return player.toString();
-		else if (obstacles.isInPosition(relativeX, y))
+		} else if (obstacles.isInPosition(relativeX, y)) {
 			return obstacles.getObstacleInPosition(relativeX, y).toString();
-		else if (coins.isInPosition(relativeX, y))
+		} else if (coins.isInPosition(relativeX, y)) {
 			return coins.getCoinInPosition(relativeX, y).toString();
-		else if (relativeX == level.getRoadLenght() - 1)
-			return metaToString();
-
-		return " ";
-	}
-
-	public void advance() {
-		player.advance();
+		} else if (relativeX == getRoadLenght() - 1)
+			return "¦";
+		return "";
 	}
 
 	public void goUp() {
@@ -119,15 +95,88 @@ public class Game {
 		player.goDown();
 	}
 
-	public boolean isFinished() {
-		return player.hasCrashed() || player.hasArrived();
+	public void update() {
+		// TODO comprobar que el coche no se salga de la carretera, se mueve en diagonal
+		// Pero eso ya lo hace en el propio player, no?
+		player.advance();
+		nCycles++;
+
+	}
+
+	public boolean playerHasCrashed() {
+		return player.hasCrashed();
+	}
+
+	public boolean playerHasArrived() {
+		return player.hasArrived();
+	}
+
+	public int getPlayerX() {
+		return player.getX();
+	}
+
+	public int getPlayerY() {
+		return player.getY();
+	}
+
+	public int getActualDistanceToGoal() {
+		return getRoadLenght() - getPlayerX();
 	}
 
 	public boolean isObstacleInPosition(int x, int y) {
 		return obstacles.isInPosition(x, y);
 	}
 
-	public int getPlayerHp() {
-		return player.getHp();
+	public boolean isCoinInPosition(int x, int y) {
+		return coins.isInPosition(x, y);
 	}
+
+	public int getRandomLane() {
+		return rand.nextInt(getRoadWidth());
+	}
+
+	public void tryToAddObstacle(Obstacle obstacle, double obstacleFrequency) {
+		if (rand.nextDouble() < obstacleFrequency) {
+			obstacles.addObstacle(obstacle);
+		}
+	}
+
+	public void tryToAddCoin(Coin coin, double coinFrequency) {
+		if (rand.nextDouble() < coinFrequency) {
+			coins.addCoin(coin);
+		}
+	}
+
+	// TODO Preguntar, no salen igual a los test
+	public void tryToGenerate() {
+		for (int x = getVisibility() / 2; x < getRoadLenght() - 1; x++) {
+			tryToAddObstacle(new Obstacle(this, x, getRandomLane()), getObstacleFrequency());
+			tryToAddCoin(new Coin(this, x, getRandomLane()), getCoinFrequency());
+		}
+	}
+
+	public void removeDeadCoins() {
+		coins.removeDeadCoins();
+	}
+
+	public String levelName() {
+		return level.toString();
+	}
+
+	public int getCoinsCounter() {
+		return coins.getDeadCoinsCounter();
+	}
+
+	public int getTotalCoins() {
+		return coins.getCoinsCounter() + coins.getDeadCoinsCounter();
+	}
+
+	public int getNumberCycles() {
+		return nCycles;
+	}
+
+	public int getTotalObstacles() {
+		return obstacles.getNumberOfObstacles();
+	}
+
 }

@@ -1,7 +1,7 @@
 package es.ucm.tp1.control;
 
 public enum Level {
-	//El 7 se cambia luego a 10
+
 	TEST(10, 3, 8, 0.5, 0), EASY(30, 3, 8, 0.5, 0.5), HARD(100, 5, 6, 0.7, 0.3);
 
 	private int length;
@@ -22,25 +22,24 @@ public enum Level {
 		this.coinFrequency = coinFrequency;
 	}
 
-	// TODO fill your code
-	public double getCoinFrequency() {
-		return coinFrequency;
+	public int getLength() {
+		return length;
 	}
 
-	public double getObstacleFrequency() {
-		return obstacleFrequency;
+	public int getWidth() {
+		return width;
 	}
 
 	public int getVisibility() {
 		return visibility;
 	}
 
-	public int getRoadWidth() {
-		return width;
+	public double getCoinFrequency() {
+		return coinFrequency;
 	}
 
-	public int getRoadLenght() {
-		return length;
+	public double getObstacleFrequency() {
+		return obstacleFrequency;
 	}
 
 	public static Level valueOfIgnoreCase(String inputString) {
@@ -63,5 +62,10 @@ public enum Level {
 			levelCount++;
 		}
 		return buffer.toString();
+	}
+
+	@Override
+	public String toString() {
+		return this.name();
 	}
 }

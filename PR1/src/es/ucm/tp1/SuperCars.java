@@ -20,7 +20,6 @@ public class SuperCars {
 
 	private static final String SEED_INFO_MSG = "Random generator initialized with seed: ";
 
-	
 	private static void usage() {
 		System.out.println(USAGE_MSG);
 		System.out.println("\t<level>: " + Level.all(", "));
@@ -49,10 +48,10 @@ public class SuperCars {
 					System.out.println("Level: " + level.name());
 					System.out.println(SEED_INFO_MSG + seed);
 
-					Game game = new Game(seed, level); 
-					if( Level.TEST.equals(level))
+					Game game = new Game(seed, level);
+					if (Level.TEST.equals(level))
 						game.toggleTest();
-					
+
 					Controller controller = new Controller(game, new Scanner(System.in));
 					controller.run();
 				} catch (NumberFormatException nfe) {
@@ -62,5 +61,4 @@ public class SuperCars {
 			}
 		}
 	}
-
 }

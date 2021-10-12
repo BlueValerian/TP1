@@ -19,7 +19,7 @@
                 "skipStaticInitializers": false,
                 "skipConstructors": false
             }
-        },
+        },        
         {
             "type": "java",
             "name": "Launch Current File",
@@ -31,7 +31,7 @@
             "name": "Launch SuperCars",
             "request": "launch",
             "mainClass": "es.ucm.tp1.SuperCars",
-            "projectName": "src_b5e49413"
+            "projectName": "src_7f6081fe"
         }
     ]
 }
