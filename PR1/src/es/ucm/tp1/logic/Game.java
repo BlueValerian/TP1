@@ -19,24 +19,34 @@ public class Game {
 	private double secondsDisplay;
 	// Record
 	private double record;
+	// Test
+	private boolean testValue;
 
 	public Game(long seed, Level level) {
 		startTimer();
 		this.rand = new Random(seed);
 		this.level = level;
+		inicialice();
+	}
+
+	private void inicialice() {
 		nCycles = 0;
 		player = new Player(this, (getRoadWidth() / 2) - 1, 1);
 		obstacles = new ObstacleList(this);
 		coins = new CoinList(this);
+		testValue = true;
 		setRecord(0);
 		tryToGenerate();
-
 	}
 
 	// TODO hacer que sea en primera ejecucion 0,00 segundos y no 0,02 segundos
 	// PREGUNTAR AL PROFESOR
 	public void startTimer() {
 		startTime = System.currentTimeMillis();
+	}
+
+	public void setTestValue(boolean testValue) {
+		this.testValue = testValue;
 	}
 
 	public double showTimeSeconds() {
@@ -47,8 +57,11 @@ public class Game {
 	}
 
 	public void toggleTest() {
-		// TODO PREGUNTAR AL PROFESOR
-		// Que va aqui?
+		setTestValue(false);
+	}
+
+	public boolean getTestValue() {
+		return this.testValue;
 	}
 
 	public int getVisibility() {
@@ -186,11 +199,8 @@ public class Game {
 	}
 
 	public void reset() {
-		nCycles = 0;
-		this.player.setX(getRoadWidth() / 2);
-		this.player.setY(1);
-		this.coins.resetList();
-
+		// TODO usar de nuevo el constructor
+		inicialice();
 	}
 
 	public void setRecord(double record) {
@@ -199,6 +209,5 @@ public class Game {
 
 	public double getRecord() {
 		return record;
-
 	}
 }

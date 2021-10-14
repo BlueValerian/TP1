@@ -57,17 +57,19 @@ public class GamePrinter {
 
 	private String getInfo() {
 		/* @formatter:off */
-		return  
-		// "Level: " + game.levelName() + "\n" + 
-		// 		"Random generator initialized with seed: " + game.getSeed() + "\n" +
-				"Distance: " + (game.getActualDistanceToGoal() - 1) + "\n" +
+		String str = "";
+		str +=  "Distance: " + (game.getActualDistanceToGoal() - 1) + "\n" +
 				"Coins: " + game.getCoinsCounter() + "\n" +
 				"Cycle: " + game.getNumberCycles() + "\n" +
 				"Total obstacles: " + game.getTotalObstacles() + "\n" +
-				"Total coins: " + game.getTotalCoins() + "\n" +
-				"Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
+				"Total coins: " + game.getTotalCoins() + "\n";
+				//"Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
+		//TODO completar
+		if(game.getTestValue()){
+			str += "Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
+		}
 		/* @formatter:on */
-
+		return str;
 	}
 
 	@Override

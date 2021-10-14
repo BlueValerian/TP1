@@ -64,7 +64,9 @@ public class Controller {
 			Boolean reset = false;
 
 			System.out.print(PROMPT);
+			// System.lineSeparator();
 			String cmd = scanner.nextLine();
+			System.out.println();
 			System.out.println("[DEBUG] Executing: " + cmd);
 			cmd = cmd.toLowerCase();
 			switch (cmd) {
@@ -97,7 +99,8 @@ public class Controller {
 					}
 				case "t":
 					test = true;
-					// TODO Como desactivar el timer?
+					// TODO Como no mostrar el timer?
+					game.toggleTest();
 					break;
 				case "r":
 				case "reset":
