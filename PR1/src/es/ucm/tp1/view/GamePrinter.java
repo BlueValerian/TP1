@@ -105,7 +105,11 @@ public class GamePrinter {
 		if (game.playerHasCrashed()) {
 			s += CRASH_MSG;
 		} else if (game.playerHasArrived()) {
-			s += WIN_MSG;
+			s += WIN_MSG;// + "New record!: " + String.format("%.2f", game.showTimeSeconds()) + " s";
+			if (game.getRecord() <= game.showTimeSeconds()) {
+				game.setRecord(game.showTimeSeconds());
+				s += "New record!: " + String.format("%.2f", game.showTimeSeconds()) + " s";
+			}
 		} else {
 			s += DO_EXIT_MSG;
 		}

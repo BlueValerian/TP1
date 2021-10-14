@@ -18,12 +18,17 @@ public class Controller {
 			"[h]elp: show this help",
 			"[i]nfo: prints gameobject info",
 			"[n]one | []: update",
-			"[q]: go up",
+			"[q]: go up",	
 			"[a]: go down",
 			"[e]xit: exit game",
 			"[r]eset: reset game",
 			"[t]est: enables test mode", };
 	
+	private static final String[] INFO = new String[] {
+		"[Car] the racing car",
+		"[Coin] gives 1 coin to the player",
+		"[Obstacle] hits car",
+	};
 	/* @formatter:on */
 
 	private Game game;
@@ -56,6 +61,7 @@ public class Controller {
 			Boolean help = false;
 			Boolean info = false;
 			Boolean test = false;
+			Boolean reset = false;
 
 			System.out.print(PROMPT);
 			String cmd = scanner.nextLine();
@@ -64,10 +70,10 @@ public class Controller {
 			switch (cmd) {
 				case "h":
 				case "help":
-					help = true;
 					for (String i : HELP) {
 						System.out.println(i);
 					}
+					help = true;
 					break;
 				case "q":
 					game.goUp();
@@ -86,21 +92,28 @@ public class Controller {
 					break;
 				case "i":
 					info = true;
-					// System.out.println(printer.getInfo());
+					for (String i : INFO) {
+						System.out.println(i);
+					}
 				case "t":
 					test = true;
 					// TODO Como desactivar el timer?
+					break;
+				case "r":
+				case "reset":
+					game.reset();
+					printGame();
+					reset = true;
 					break;
 				default:
 					wrongCommand = true;
 					break;
 			}
-			// if (!(cmd.equals("i") || cmd.equals("h") || cmd.equals("e") || wrongCommand))
-			// {
-			if (!(info || help || doExit || wrongCommand)) {
+			if (!(info || help || doExit || wrongCommand || reset)) {
 				game.update();
 				doExit = (game.playerHasCrashed() || game.playerHasArrived());
 				game.removeDeadCoins();
+				game.setRecord(game.showTimeSeconds());
 				printGame();
 			}
 			if (wrongCommand) {

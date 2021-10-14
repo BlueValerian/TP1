@@ -17,15 +17,18 @@ public class Game {
 	private double elapsedTime;
 	private double elapsedSeconds;
 	private double secondsDisplay;
+	// Record
+	private double record;
 
 	public Game(long seed, Level level) {
 		startTimer();
 		this.rand = new Random(seed);
 		this.level = level;
 		nCycles = 0;
-		player = new Player(this, getRoadWidth() / 2, 1);
+		player = new Player(this, (getRoadWidth() / 2) - 1, 1);
 		obstacles = new ObstacleList(this);
 		coins = new CoinList(this);
+		setRecord(0);
 		tryToGenerate();
 
 	}
@@ -132,22 +135,25 @@ public class Game {
 	}
 
 	public int getRandomLane() {
-		return rand.nextInt(getRoadWidth());
+		return (int) (getrandomNumber() * getRoadWidth());
+	}
+
+	private double getrandomNumber() {
+		return rand.nextDouble();
 	}
 
 	public void tryToAddObstacle(Obstacle obstacle, double obstacleFrequency) {
-		if (rand.nextDouble() < obstacleFrequency) {
+		if (rand.nextDouble() < obstacleFrequency && !coins.isInPosition(obstacle.getX(), obstacle.getY())) {
 			obstacles.addObstacle(obstacle);
 		}
 	}
 
 	public void tryToAddCoin(Coin coin, double coinFrequency) {
-		if (rand.nextDouble() < coinFrequency) {
+		if (rand.nextDouble() < coinFrequency && !obstacles.isInPosition(coin.getX(), coin.getY())) {
 			coins.addCoin(coin);
 		}
 	}
 
-	// TODO Preguntar, no salen igual a los test
 	public void tryToGenerate() {
 		for (int x = getVisibility() / 2; x < getRoadLenght() - 1; x++) {
 			tryToAddObstacle(new Obstacle(this, x, getRandomLane()), getObstacleFrequency());
@@ -179,4 +185,20 @@ public class Game {
 		return obstacles.getNumberOfObstacles();
 	}
 
+	public void reset() {
+		nCycles = 0;
+		this.player.setX(getRoadWidth() / 2);
+		this.player.setY(1);
+		this.coins.resetList();
+
+	}
+
+	public void setRecord(double record) {
+		this.record = record;
+	}
+
+	public double getRecord() {
+		return record;
+
+	}
 }
