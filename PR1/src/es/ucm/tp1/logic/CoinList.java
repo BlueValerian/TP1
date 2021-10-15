@@ -2,7 +2,6 @@ package es.ucm.tp1.logic;
 
 public class CoinList {
     private Coin[] coins;
-    private Coin[] deadCoins;
     private int nCoins;
     private Game game;
     private int nDeadCoins;
@@ -11,7 +10,6 @@ public class CoinList {
         this.game = game;
         coins = new Coin[game.getRoadLenght()];
         nCoins = 0;
-        deadCoins = new Coin[game.getRoadLenght()];
         nDeadCoins = 0;
     }
 
@@ -36,6 +34,7 @@ public class CoinList {
                 }
             }
             nCoins--;
+            nDeadCoins++;
         }
     }
 
@@ -56,24 +55,4 @@ public class CoinList {
         nCoins++;
     }
 
-    public void resetList() {
-        Coin[] newCoins;
-        int newSize = getDeadCoinsCounter() + getCoinsCounter();
-        newCoins = new Coin[game.getRoadLenght()];
-        int pos = 0;
-        for (int i = 0; i < getCoinsCounter(); i++) {
-            newCoins[pos] = coins[i];
-            coins[pos] = null;
-            pos++;
-        }
-        for (int i = 0; i < getDeadCoinsCounter(); i++) {
-            newCoins[pos] = deadCoins[i];
-            deadCoins[i] = null;
-            coins[pos] = null;
-            pos++;
-        }
-        for (int i = 0; i < pos; i++) {
-            this.coins[i] = newCoins[i];
-        }
-    }
 }

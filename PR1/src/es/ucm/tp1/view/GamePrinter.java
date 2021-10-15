@@ -58,14 +58,13 @@ public class GamePrinter {
 	private String getInfo() {
 		/* @formatter:off */
 		String str = "";
-		str +=  "Distance: " + (game.getActualDistanceToGoal() - 1) + "\n" +
+		str +=  "Distance: " + (game.getActualDistanceToGoal()) + "\n" +
 				"Coins: " + game.getCoinsCounter() + "\n" +
 				"Cycle: " + game.getNumberCycles() + "\n" +
 				"Total obstacles: " + game.getTotalObstacles() + "\n" +
 				"Total coins: " + game.getTotalCoins() + "\n";
-				//"Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
-		//TODO completar
-		if(game.getTestValue()){
+
+		if(game.getTestValue()  && game.levelName() != "TEST") {
 			str += "Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
 		}
 		/* @formatter:on */
@@ -108,7 +107,7 @@ public class GamePrinter {
 			s += CRASH_MSG;
 		} else if (game.playerHasArrived()) {
 			s += WIN_MSG;// + "New record!: " + String.format("%.2f", game.showTimeSeconds()) + " s";
-			if (game.getRecord() <= game.showTimeSeconds()) {
+			if (game.getRecord() <= game.showTimeSeconds() && game.getTestValue()) {
 				game.setRecord(game.showTimeSeconds());
 				s += "New record!: " + String.format("%.2f", game.showTimeSeconds()) + " s";
 			}

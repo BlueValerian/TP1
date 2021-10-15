@@ -31,7 +31,7 @@ public class Game {
 
 	private void inicialice() {
 		nCycles = 0;
-		player = new Player(this, (getRoadWidth() / 2) - 1, 1);
+		player = new Player(this, 0, (getRoadWidth() / 2));
 		obstacles = new ObstacleList(this);
 		coins = new CoinList(this);
 		testValue = true;
@@ -168,7 +168,7 @@ public class Game {
 	}
 
 	public void tryToGenerate() {
-		for (int x = getVisibility() / 2; x < getRoadLenght() - 1; x++) {
+		for (int x = getVisibility() / 2; x < getRoadLenght(); x++) {
 			tryToAddObstacle(new Obstacle(this, x, getRandomLane()), getObstacleFrequency());
 			tryToAddCoin(new Coin(this, x, getRandomLane()), getCoinFrequency());
 		}

@@ -101,6 +101,7 @@ public class Controller {
 					test = true;
 					// TODO Como no mostrar el timer?
 					game.toggleTest();
+					printGame();
 					break;
 				case "r":
 				case "reset":
@@ -112,7 +113,7 @@ public class Controller {
 					wrongCommand = true;
 					break;
 			}
-			if (!(info || help || doExit || wrongCommand || reset)) {
+			if (!(info || help || doExit || wrongCommand || reset || test)) {
 				game.update();
 				doExit = (game.playerHasCrashed() || game.playerHasArrived());
 				game.removeDeadCoins();
