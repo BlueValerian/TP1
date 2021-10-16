@@ -59,13 +59,14 @@ public class GamePrinter {
 		/* @formatter:off */
 		String str = "";
 		str +=  "Distance: " + (game.getActualDistanceToGoal()) + "\n" +
-				"Coins: " + game.getCoinsCounter() + "\n" +
+				"Coins: " + game.getPlayerCoinsCounter() + "\n" +
 				"Cycle: " + game.getNumberCycles() + "\n" +
 				"Total obstacles: " + game.getTotalObstacles() + "\n" +
-				"Total coins: " + game.getTotalCoins() + "\n";
+				"Total coins: " + (game.getTotalCoins() - game.getPlayerCoinsCounter());
 
 		if(game.getTestValue()  && game.levelName() != "TEST") {
-			str += "Time: " + String.format("%.2f",game.showTimeSeconds() ) + " s \n";
+			str += "\n" + "Elapsed Time: " + String.format(java.util.Locale.US, "%.2f",game.showTimeSeconds() ) + " s";
+			
 		}
 		/* @formatter:on */
 		return str;

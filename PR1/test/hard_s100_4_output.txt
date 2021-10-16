@@ -3,12 +3,11 @@ Super cars 1.0
 Level: HARD
 Random generator initialized with seed: 100
 Distance: 100
-Coins: 0
+Coins: 5
 Cycle: 0
 Total obstacles: 65
 Total coins: 21
-Time: 0,02 s 
-
+Elapsed Time: 0.01 s
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -24,11 +23,10 @@ Time: 0,02 s
 Command > 
 [DEBUG] Executing: t
 Distance: 100
-Coins: 0
+Coins: 5
 Cycle: 0
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -44,11 +42,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 99
-Coins: 0
+Coins: 5
 Cycle: 1
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -64,11 +61,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 98
-Coins: 0
+Coins: 5
 Cycle: 2
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
                                               ¢    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -84,11 +80,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 97
-Coins: 0
+Coins: 5
 Cycle: 3
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
                                       ¢            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -104,11 +99,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 96
-Coins: 0
+Coins: 5
 Cycle: 4
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
                               ¢                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -124,11 +118,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 95
-Coins: 0
+Coins: 5
 Cycle: 5
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
       >               ¢                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -144,11 +137,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 94
-Coins: 0
+Coins: 5
 Cycle: 6
 Total obstacles: 65
 Total coins: 21
-
   ═════════════════════════════════════════════════
       >       ¢                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -164,11 +156,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 93
-Coins: 1
+Coins: 6
 Cycle: 7
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -184,11 +175,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 92
-Coins: 1
+Coins: 6
 Cycle: 8
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
       >                                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -204,11 +194,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 91
-Coins: 1
+Coins: 6
 Cycle: 9
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
       >                               ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -224,11 +213,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 90
-Coins: 1
+Coins: 6
 Cycle: 10
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                               ░               ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -244,11 +232,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 89
-Coins: 1
+Coins: 6
 Cycle: 11
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                       ░               ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -264,11 +251,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 88
-Coins: 1
+Coins: 6
 Cycle: 12
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
               ░               ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -284,11 +270,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 87
-Coins: 1
+Coins: 6
 Cycle: 13
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
       ░               ░                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -304,11 +289,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 86
-Coins: 1
+Coins: 6
 Cycle: 14
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
               ░                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -324,11 +308,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 85
-Coins: 1
+Coins: 6
 Cycle: 15
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
       ░                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -344,11 +327,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 84
-Coins: 1
+Coins: 6
 Cycle: 16
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -364,11 +346,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 83
-Coins: 1
+Coins: 6
 Cycle: 17
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -384,11 +365,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 82
-Coins: 1
+Coins: 6
 Cycle: 18
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -404,11 +384,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 81
-Coins: 1
+Coins: 6
 Cycle: 19
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -424,11 +403,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 80
-Coins: 1
+Coins: 6
 Cycle: 20
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 20
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -444,11 +422,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 79
-Coins: 2
+Coins: 7
 Cycle: 21
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 19
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -464,11 +441,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 78
-Coins: 2
+Coins: 7
 Cycle: 22
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 19
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -484,11 +460,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 77
-Coins: 3
+Coins: 8
 Cycle: 23
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 18
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -504,11 +479,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 76
-Coins: 3
+Coins: 8
 Cycle: 24
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 18
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -524,11 +498,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 75
-Coins: 3
+Coins: 8
 Cycle: 25
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 18
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -544,11 +517,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 74
-Coins: 3
+Coins: 8
 Cycle: 26
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 18
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -564,11 +536,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 73
-Coins: 3
+Coins: 8
 Cycle: 27
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 18
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -584,11 +555,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 72
-Coins: 4
+Coins: 9
 Cycle: 28
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -604,11 +574,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 71
-Coins: 4
+Coins: 9
 Cycle: 29
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                               ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -624,11 +593,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 70
-Coins: 4
+Coins: 9
 Cycle: 30
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -644,11 +612,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 69
-Coins: 4
+Coins: 9
 Cycle: 31
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                               ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -664,11 +631,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 68
-Coins: 4
+Coins: 9
 Cycle: 32
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                       ░                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -684,11 +650,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 67
-Coins: 4
+Coins: 9
 Cycle: 33
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
               ░                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -704,11 +669,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 66
-Coins: 4
+Coins: 9
 Cycle: 34
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
       ░                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -724,11 +688,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 65
-Coins: 4
+Coins: 9
 Cycle: 35
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -744,11 +707,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 64
-Coins: 4
+Coins: 9
 Cycle: 36
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -764,11 +726,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 63
-Coins: 4
+Coins: 9
 Cycle: 37
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -784,11 +745,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 62
-Coins: 4
+Coins: 9
 Cycle: 38
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                               ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -804,11 +764,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 61
-Coins: 4
+Coins: 9
 Cycle: 39
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -824,11 +783,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 60
-Coins: 4
+Coins: 9
 Cycle: 40
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                               ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -844,11 +802,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 59
-Coins: 4
+Coins: 9
 Cycle: 41
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                       ░                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -864,11 +821,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 58
-Coins: 4
+Coins: 9
 Cycle: 42
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
               ░                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -884,11 +840,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 57
-Coins: 4
+Coins: 9
 Cycle: 43
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
       ░                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -904,11 +859,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 56
-Coins: 4
+Coins: 9
 Cycle: 44
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -924,11 +878,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 55
-Coins: 4
+Coins: 9
 Cycle: 45
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 17
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -944,11 +897,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 54
-Coins: 5
+Coins: 10
 Cycle: 46
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -964,11 +916,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 53
-Coins: 5
+Coins: 10
 Cycle: 47
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -984,11 +935,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 52
-Coins: 5
+Coins: 10
 Cycle: 48
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1004,11 +954,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 51
-Coins: 5
+Coins: 10
 Cycle: 49
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1024,11 +973,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 50
-Coins: 5
+Coins: 10
 Cycle: 50
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1044,11 +992,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 49
-Coins: 5
+Coins: 10
 Cycle: 51
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1064,11 +1011,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 48
-Coins: 5
+Coins: 10
 Cycle: 52
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1084,11 +1030,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 47
-Coins: 5
+Coins: 10
 Cycle: 53
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1104,11 +1049,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 46
-Coins: 5
+Coins: 10
 Cycle: 54
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
       >                                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1124,11 +1068,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 45
-Coins: 5
+Coins: 10
 Cycle: 55
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 16
   ═════════════════════════════════════════════════
                                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1144,11 +1087,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 44
-Coins: 6
+Coins: 11
 Cycle: 56
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 15
   ═════════════════════════════════════════════════
                               ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1164,11 +1106,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 43
-Coins: 6
+Coins: 11
 Cycle: 57
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 15
   ═════════════════════════════════════════════════
                       ░                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1184,11 +1125,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 42
-Coins: 6
+Coins: 11
 Cycle: 58
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 15
   ═════════════════════════════════════════════════
               ░                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1204,11 +1144,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 41
-Coins: 6
+Coins: 11
 Cycle: 59
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 15
   ═════════════════════════════════════════════════
       ░                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1224,11 +1163,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 40
-Coins: 7
+Coins: 12
 Cycle: 60
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 14
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1244,11 +1182,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 39
-Coins: 7
+Coins: 12
 Cycle: 61
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 14
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1264,11 +1201,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 38
-Coins: 7
+Coins: 12
 Cycle: 62
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 14
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1284,11 +1220,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 37
-Coins: 8
+Coins: 13
 Cycle: 63
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1304,11 +1239,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 36
-Coins: 8
+Coins: 13
 Cycle: 64
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1324,11 +1258,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 35
-Coins: 8
+Coins: 13
 Cycle: 65
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1344,11 +1277,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 34
-Coins: 8
+Coins: 13
 Cycle: 66
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1364,11 +1296,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 33
-Coins: 8
+Coins: 13
 Cycle: 67
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                               ¢    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1384,11 +1315,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 32
-Coins: 8
+Coins: 13
 Cycle: 68
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
                                       ¢            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1404,11 +1334,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 31
-Coins: 8
+Coins: 13
 Cycle: 69
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
       >                       ¢                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1424,11 +1353,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 30
-Coins: 8
+Coins: 13
 Cycle: 70
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
       >               ¢                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1444,11 +1372,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 29
-Coins: 8
+Coins: 13
 Cycle: 71
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 13
   ═════════════════════════════════════════════════
       >       ¢                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1464,11 +1391,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 28
-Coins: 9
+Coins: 14
 Cycle: 72
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1484,11 +1410,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 27
-Coins: 9
+Coins: 14
 Cycle: 73
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
       >                                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1504,11 +1429,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 26
-Coins: 9
+Coins: 14
 Cycle: 74
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
                                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1524,11 +1448,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 25
-Coins: 9
+Coins: 14
 Cycle: 75
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
                               ░               ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1544,11 +1467,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 24
-Coins: 9
+Coins: 14
 Cycle: 76
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
                       ░               ░       ¢    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1564,11 +1486,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 23
-Coins: 9
+Coins: 14
 Cycle: 77
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
               ░               ░       ¢            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1584,11 +1505,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 22
-Coins: 9
+Coins: 14
 Cycle: 78
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
       ░               ░       ¢                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1604,11 +1524,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 21
-Coins: 9
+Coins: 14
 Cycle: 79
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
               ░       ¢                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1624,11 +1543,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 20
-Coins: 9
+Coins: 14
 Cycle: 80
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
       ░       ¢                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1644,11 +1562,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 19
-Coins: 9
+Coins: 14
 Cycle: 81
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
       ¢                       ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1664,11 +1581,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 18
-Coins: 9
+Coins: 14
 Cycle: 82
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
                       ░                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1684,11 +1600,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 17
-Coins: 9
+Coins: 14
 Cycle: 83
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 12
   ═════════════════════════════════════════════════
               ░                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1704,11 +1619,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 16
-Coins: 10
+Coins: 15
 Cycle: 84
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
       ░                       ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1724,11 +1638,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 15
-Coins: 10
+Coins: 15
 Cycle: 85
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
                       ░                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1744,11 +1657,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 14
-Coins: 10
+Coins: 15
 Cycle: 86
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
               ░                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1764,11 +1676,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 13
-Coins: 10
+Coins: 15
 Cycle: 87
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
       ░                       ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1784,11 +1695,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: a
 Distance: 12
-Coins: 10
+Coins: 15
 Cycle: 88
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
                       ░                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1804,11 +1714,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 11
-Coins: 10
+Coins: 15
 Cycle: 89
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
               ░                       ░            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1824,11 +1733,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 10
-Coins: 10
+Coins: 15
 Cycle: 90
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
       ░                       ░                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1844,11 +1752,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: q
 Distance: 9
-Coins: 10
+Coins: 15
 Cycle: 91
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
                       ░                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1864,11 +1771,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 8
-Coins: 10
+Coins: 15
 Cycle: 92
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
               ░                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1884,11 +1790,10 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 7
-Coins: 10
+Coins: 15
 Cycle: 93
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 11
   ═════════════════════════════════════════════════
       ░                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -1904,117 +1809,130 @@ Total coins: 21
 Command > 
 [DEBUG] Executing: 
 Distance: 6
-Coins: 11
+Coins: 16
 Cycle: 94
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 10
   ═════════════════════════════════════════════════
-                                              ¦    
+                                                   
    ─────── ─────── ─────── ─────── ─────── ─────── 
                       ¢       ¢               ¢    
    ─────── ─────── ─────── ─────── ─────── ─────── 
       >                                       ░    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                                      ¢       ¦    
+                                      ¢            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                                              ¦    
+                                                   
   ═════════════════════════════════════════════════
 
 Command > 
 [DEBUG] Executing: q
 Distance: 5
-Coins: 11
+Coins: 16
 Cycle: 95
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 10
   ═════════════════════════════════════════════════
-                                      ¦            
+                                              ¦    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      >       ¢       ¢               ¢            
+      >       ¢       ¢               ¢       ¦    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                                      ░            
+                                      ░       ¦    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                              ¢       ¦            
+                              ¢               ¦    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                                      ¦            
+                                              ¦    
   ═════════════════════════════════════════════════
 
 Command > 
 [DEBUG] Executing: 
 Distance: 4
-Coins: 12
+Coins: 17
 Cycle: 96
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 9
   ═════════════════════════════════════════════════
-                              ¦                    
+                                      ¦            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      >       ¢               ¢                    
+      >       ¢               ¢       ¦            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                              ░                    
+                              ░       ¦            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                      ¢       ¦                    
+                      ¢               ¦            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                              ¦                    
+                                      ¦            
   ═════════════════════════════════════════════════
 
 Command > 
 [DEBUG] Executing: 
 Distance: 3
-Coins: 13
+Coins: 18
 Cycle: 97
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 8
   ═════════════════════════════════════════════════
-                      ¦                            
+                              ¦                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      >               ¢                            
+      >               ¢       ¦                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                      ░                            
+                      ░       ¦                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-              ¢       ¦                            
+              ¢               ¦                    
    ─────── ─────── ─────── ─────── ─────── ─────── 
-                      ¦                            
+                              ¦                    
   ═════════════════════════════════════════════════
 
 Command > 
 [DEBUG] Executing: 
 Distance: 2
-Coins: 13
+Coins: 18
 Cycle: 98
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 8
   ═════════════════════════════════════════════════
-              ¦                                    
+                      ¦                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      >       ¢                                    
+      >       ¢       ¦                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-              ░                                    
+              ░       ¦                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      ¢       ¦                                    
+      ¢               ¦                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-              ¦                                    
+                      ¦                            
   ═════════════════════════════════════════════════
 
 Command > 
 [DEBUG] Executing: 
 Distance: 1
-Coins: 14
+Coins: 19
 Cycle: 99
 Total obstacles: 65
-Total coins: 21
+Total coins: 7
+  ═════════════════════════════════════════════════
+              ¦                                    
+   ─────── ─────── ─────── ─────── ─────── ─────── 
+      >       ¦                                    
+   ─────── ─────── ─────── ─────── ─────── ─────── 
+      ░       ¦                                    
+   ─────── ─────── ─────── ─────── ─────── ─────── 
+              ¦                                    
+   ─────── ─────── ─────── ─────── ─────── ─────── 
+              ¦                                    
+  ═════════════════════════════════════════════════
 
+Command > 
+[DEBUG] Executing: 
+Distance: 0
+Coins: 19
+Cycle: 100
+Total obstacles: 65
+Total coins: 7
   ═════════════════════════════════════════════════
       ¦                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
       >                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
-      ░                                            
+      ¦                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
       ¦                                            
    ─────── ─────── ─────── ─────── ─────── ─────── 
@@ -2023,12 +1941,11 @@ Total coins: 21
 
 Command > 
 [DEBUG] Executing: 
-Distance: 0
-Coins: 14
-Cycle: 100
+Distance: -1
+Coins: 19
+Cycle: 101
 Total obstacles: 65
-Total coins: 21
-
+Total coins: 7
   ═════════════════════════════════════════════════
                                                    
    ─────── ─────── ─────── ─────── ─────── ─────── 

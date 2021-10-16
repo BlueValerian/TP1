@@ -5,14 +5,24 @@ public class Player {
 	private int y;
 	private Game game;
 	private int hp;
+	private int nCoins;
 
 	public Player(Game game, int x, int y) {
 		this.x = x;
 		this.y = y;
 		hp = 1;
+		this.nCoins = 5;
 		this.game = game;
 	}
-
+	
+	public int getCoinCounter() {
+		return nCoins;
+	}
+	
+	public void increaseCoinCounter() {
+		nCoins++;
+	}
+	
 	public void setX(int x) {
 		this.x = x;
 	}
@@ -23,7 +33,7 @@ public class Player {
 
 	public int getX() {
 		return x;
-	}	
+	}
 
 	public int getY() {
 		return y;
@@ -71,7 +81,7 @@ public class Player {
 	}
 
 	public boolean hasArrived() {
-		return (game.getRoadLenght() - getX() == 0);
+		return (game.getRoadLenght() - getX() + 1== 0);
 	}
 
 }

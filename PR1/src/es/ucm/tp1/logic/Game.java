@@ -39,8 +39,6 @@ public class Game {
 		tryToGenerate();
 	}
 
-	// TODO hacer que sea en primera ejecucion 0,00 segundos y no 0,02 segundos
-	// PREGUNTAR AL PROFESOR
 	public void startTimer() {
 		startTime = System.currentTimeMillis();
 	}
@@ -84,12 +82,6 @@ public class Game {
 		return level.getCoinFrequency();
 	}
 
-	// TODO PREGUNTAR AL PROFESOR
-	// Que va aqui?
-	public String getGameStatus() {
-		return "";
-	}
-
 	public String positionToString(int x, int y) {
 		int relativeX = player.getX() + x;
 		if (player.isInPosition(relativeX, y)) {
@@ -98,7 +90,7 @@ public class Game {
 			return obstacles.getObstacleInPosition(relativeX, y).toString();
 		} else if (coins.isInPosition(relativeX, y)) {
 			return coins.getCoinInPosition(relativeX, y).toString();
-		} else if (relativeX == getRoadLenght() - 1)
+		} else if (relativeX == getRoadLenght())
 			return "¦";
 		return "";
 	}
@@ -112,11 +104,8 @@ public class Game {
 	}
 
 	public void update() {
-		// TODO comprobar que el coche no se salga de la carretera, se mueve en diagonal
-		// Pero eso ya lo hace en el propio player, no?
 		player.advance();
 		nCycles++;
-
 	}
 
 	public boolean playerHasCrashed() {
@@ -182,12 +171,13 @@ public class Game {
 		return level.toString();
 	}
 
-	public int getCoinsCounter() {
-		return coins.getDeadCoinsCounter();
+	public int getPlayerCoinsCounter() {
+		return player.getCoinCounter();
 	}
 
 	public int getTotalCoins() {
-		return coins.getCoinsCounter() + coins.getDeadCoinsCounter();
+		return coins.getCoinsCounter() + getPlayerCoinsCounter();
+				
 	}
 
 	public int getNumberCycles() {
@@ -197,9 +187,12 @@ public class Game {
 	public int getTotalObstacles() {
 		return obstacles.getNumberOfObstacles();
 	}
-
+	
+	public void increaseCoinCounter() {
+		player.increaseCoinCounter();
+	}
+	
 	public void reset() {
-		// TODO usar de nuevo el constructor
 		inicialice();
 	}
 

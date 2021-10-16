@@ -25,10 +25,12 @@ public class Controller {
 			"[t]est: enables test mode", };
 	
 	private static final String[] INFO = new String[] {
+		"Available objects:",
 		"[Car] the racing car",
 		"[Coin] gives 1 coin to the player",
 		"[Obstacle] hits car",
 	};
+
 	/* @formatter:on */
 
 	private Game game;
@@ -64,7 +66,6 @@ public class Controller {
 			Boolean reset = false;
 
 			System.out.print(PROMPT);
-			// System.lineSeparator();
 			String cmd = scanner.nextLine();
 			System.out.println();
 			System.out.println("[DEBUG] Executing: " + cmd);
@@ -93,13 +94,14 @@ public class Controller {
 					doExit = true;
 					break;
 				case "i":
+				case "info":
 					info = true;
 					for (String i : INFO) {
 						System.out.println(i);
 					}
+					break;
 				case "t":
 					test = true;
-					// TODO Como no mostrar el timer?
 					game.toggleTest();
 					printGame();
 					break;
@@ -121,7 +123,7 @@ public class Controller {
 				printGame();
 			}
 			if (wrongCommand) {
-				System.out.println(UNKNOWN_COMMAND_MSG);
+				System.out.println("[ERROR]: "+ UNKNOWN_COMMAND_MSG + "\n");
 			}
 		}
 		System.out.println(printer.endMessage());

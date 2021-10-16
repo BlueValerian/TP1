@@ -29,6 +29,7 @@ public class CoinList {
                 if (coins[i].isInPosition(game.getPlayerX(), game.getPlayerY())) {
                     coins[i] = null;
                     move = true;
+                    game.increaseCoinCounter();
                 } else if (move) {
                     coins[i - 1] = coins[i];
                 }
