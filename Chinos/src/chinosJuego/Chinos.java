@@ -1,5 +1,5 @@
 package chinosJuego;
-
+//TEST
 import java.util.Random;
 import chinosJuego.logic.Game;
 
